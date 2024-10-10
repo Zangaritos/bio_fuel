@@ -1,0 +1,114 @@
+/* Подключаем шрифт */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Цветовые переменные */
+:root {
+    --primary-color: #4CAF50; /* Основной зеленый цвет */
+    --accent-color: #FF5722;  /* Цвет акцента */
+    --text-color: #333333;    /* Темный цвет текста */
+    --background-color: #F5F5F5; /* Светлый цвет фона */
+    --section-bg-1: #E8F5E9;  /* Светло-зеленый фон */
+    --section-bg-2: #FFF3E0;  /* Светло-оранжевый фон */
+    --section-bg-3: #E3F2FD;  /* Светло-голубой фон */
+}
+
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Навигационная панель */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar .nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Стили для секций */
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+.section:nth-child(odd) {
+    background-color: var(--section-bg-1);
+}
+
+.section:nth-child(even) {
+    background-color: var(--section-bg-2);
+}
+
+.section .text {
+    flex: 1;
+}
+
+.section .text h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.section .image {
+    flex: 1;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section .image, .section .text {
+        text-align: center;
+    }
+
+    .section img {
+        margin-top: 1rem;
+    }
+}
