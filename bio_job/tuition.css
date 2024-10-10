@@ -1,18 +1,18 @@
-/* Подключаем шрифт */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-/* Цветовые переменные */
+
 :root {
-    --primary-color: #4CAF50; /* Основной зеленый цвет */
-    --accent-color: #FF5722;  /* Цвет акцента */
-    --text-color: #333333;    /* Темный цвет текста */
-    --background-color: #F5F5F5; /* Светлый цвет фона */
-    --section-bg-1: #E8F5E9;  /* Светло-зеленый фон */
-    --section-bg-2: #FFF3E0;  /* Светло-оранжевый фон */
-    --section-bg-3: #E3F2FD;  /* Светло-голубой фон */
+    --primary-color: #4CAF50; 
+    --accent-color: #FF5722;  
+    --text-color: #333333;    
+    --background-color: #F5F5F5; 
+    --section-bg-1: #E8F5E9;  
+    --section-bg-2: #FFF3E0;  
+    --section-bg-3: #E3F2FD;  
 }
 
-/* Основные стили */
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@ body {
     line-height: 1.6;
 }
 
-/* Навигационная панель */
+
 .navbar {
     background-color: var(--primary-color);
     padding: 1rem 2rem;
@@ -60,7 +60,6 @@ body {
     color: var(--accent-color);
 }
 
-/* Стили для секций */
 .section {
     display: flex;
     justify-content: space-between;
@@ -97,7 +96,7 @@ body {
     border-radius: 8px;
 }
 
-/* Адаптивные стили */
+
 @media (max-width: 768px) {
     .section {
         flex-direction: column;
